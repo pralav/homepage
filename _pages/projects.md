@@ -3,7 +3,7 @@ id: portfolio
 layout: page
 title: Projects
 permalink: /projects/
-description: List of projects with tags.
+description: Choose tags below to filter projects.
 nav: true
 ---
 
