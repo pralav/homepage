@@ -22,7 +22,6 @@ nav: true
     <li><span class="filter" data-filter=".vr">AI for Virtual Reality</span></li>
     <li><span class="filter" data-filter=".behavior">Human Behavior</span></li>
     <li><span class="filter" data-filter=".elections">Elections</span></li>
-    <li><span class="filter" data-filter=".misc">Miscellaneous</span></li>
     <li><span class="filter" data-filter=".classify">Classification</span></li>
     
 
