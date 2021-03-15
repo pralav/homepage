@@ -13,7 +13,7 @@ profile:
     Cambridge, MA, USA 
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 Hi வணக்கம் ! I am a PhD student at MIT Media Lab, where I work in the <a href="https://www.ccc.mit.edu/" target="_blank">MIT Center for Constructive Communication</a> (formerly <a href="https://socialmachines.org/" target="_blank">Laboratory of Social Machines</a>) group with <a href="https://www.media.mit.edu/people/dkroy/overview/" target="_blank">Deb Roy</a>. My research interests lie at the intersection of Natural Language Processing and Computational Social Science. Mainly, I’m interested in exploring different learning techniques to improve natural language understanding and empower AI systems to better model, characterize, understand, and reason about human behavior.
