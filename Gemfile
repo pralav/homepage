@@ -11,4 +11,5 @@ group :jekyll_plugins do
     gem 'unicode_utils'
     gem 'jekyll-include-cache'
     gem 'jekyll-pdf-embed'
+    gem "listen", "~> 3.4.1"
 end
