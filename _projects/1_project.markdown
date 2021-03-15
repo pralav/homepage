@@ -1,9 +1,12 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: /assets/img/12.jpg
-importance: 1
+title: Adversarial Examples Generation
+description: Using a Deep Reinforced Model  
+img: /assets/images/ecml.gif
+search_img: /homepage/assets/images/ecml.gif
+category: aisafety adveg gen
+importance: 3
+link_ext: https://link.springer.com/chapter/10.1007/978-3-030-46147-8_43
 ---
 
 Every project has a beautiful feature showcase page.

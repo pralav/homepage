@@ -1,9 +1,12 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
+title: Auris
+description: Creating Affective Virtual Spaces from Music
+img: /assets/images/auris.gif
+link_ext: https://dl.acm.org/doi/10.1145/3139131.3139139
+search_img: /homepage/assets/images/auris.gif
+category: multimodal vr
+importance: 13
 ---
 
 Every project has a beautiful feature showcase page.

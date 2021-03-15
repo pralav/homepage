@@ -2,47 +2,160 @@
 layout: default
 ---
 
-<div class="post">
+  <section class="tab-content">
+    <div class="container">
+      <div class="row">
 
-  <header class="post-header">
-    <h1 class="post-title">
-     {% if site.title == "blank" %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{% else %}{{ site.title }}{% endif %}
-    </h1>
-     <p class="desc">{{ page.description }}</p>
-  </header>
+        <div class="col-md-12">
+          <div class="row">
 
-  <article>
-    {% if page.profile %}
-    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-      {% if page.profile.image %}
-        <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
-      {% endif %}
-      {% if page.profile.address %}
-        <div class="address">
-          {{ page.profile.address }}
+            <div class="col-md-9 flexy_content">
+
+
+              <!-- resp-tabs-container -->
+              <div class="resp-tabs-container">
+
+                <!-- profile -->
+                <div id="profile" class="content_2">
+                  <!-- .title -->
+                  <h1 class="h-bloc">Profile - About Me</h1>
+
+                  <div class="row top-p">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="post_content about news">
+
+<!--                      <div class="post">-->
+<!--                        <article>-->
+<!--                          <div class="clearfix">-->
+                            {{ content }}
+<!--                          </div>-->
+
+                          {% if page.news %}
+                          {% include news.html %}
+                          {% endif %}
+<!--                        </article>-->
+<!--                      </div>-->
+                            </div>
+                        </div>
+                    </div>
+                <!-- End .profile -->
+                  </div>
+              <!-- End #resp-tabs-container -->
+                </div>
+              </div><!-- End verticalTab -->
+            </div>
+            <div class="col-md-3 widget-profil" style="padding-left: 50;padding-right: 50;">
+              <div class="row">
+
+                <!-- Profile Image -->
+                <div class="col-lg-12 col-md-12 col-sm-3 col-xs-12 ">
+                  <div class="image-holder one" id="pic_prof_1"  style="display:block">
+                    {% if page.profile.image %}
+                    <img class="head-image circle" src="{{ page.profile.image | prepend: '/assets/images/' | relative_url }}" width="150" height="150" alt="" />
+                    {% endif %}
+                  </div>
+
+                </div>
+                <!-- End Profile Image -->
+
+                <div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
+
+                  <!-- Profile info -->
+                  <div id="profile_info">
+                    <h1 id="name" class="transition-02">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</h1>
+                    <h4 class="line"><a href="https://ccc.mit.edu" target="_blank" style="color: #B9e5f3">{{ page.description }}</a></h4>
+                      <h4 class="line"><a href="https://www.media.mit.edu/" target="_blank" style="color: #B9e5f3">{{ page.affiliation }}</a></h4>
+                    {% if page.profile.address %}
+                       <h6><i class="fa fa-map-marker" aria-hidden="true"></i> {{ page.profile.address }}</h6>
+                    {% endif %}
+
+                  </div>
+                  <!-- End Profile info -->
+
+
+                  <!-- Profile Description -->
+                  <div id="profile_desc">
+                    <p>
+                      Research Assistant, Phd Student at MIT.
+                    </p>
+
+                  </div>
+                  <!-- End Profile Description -->
+
+
+                  <!-- Name -->
+                  <div id="profile_social" style="align-content: center;">
+
+                    <h6>Profile Details</h6>
+                    {% if page.social %}
+                    {% include social.html %}
+                    {% endif %}
+<!--                    {{ site.contact_note }}-->
+<!--                              <a href="#"><i class="fa fa-facebook"></i></a>-->
+<!--                              <a href="#"><i class="fa fa-twitter"></i></a>-->
+<!--                              <a href="#"><i class="fa fa-linkedin"></i></a>-->
+<!--                              <a href="#"><i class="fa fa fa-dribbble"></i></a>-->
+<!--                              <a href="#"><i class="fa fa-foursquare"></i></a>-->
+                    <div class="clear"></div>
+
+                  </div>
+                  <!-- End Name -->
+
+
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
-      {% endif %}
+      </div>
     </div>
-    {% endif %}
+  </section>
 
-    <div class="clearfix">
-      {{ content }}
-    </div>
 
-    {% if page.news %}
-      {% include news.html %}
-    {% endif %}
+<!--    <div class="post">-->
 
-    {% if page.selected_papers %}
-      {% include selected_papers.html %}
-    {% endif %}
+<!--      <header class="post-header">-->
+<!--        <h1 class="post-title">-->
+<!--          {% if site.title == "blank" %}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{% else %}{{ site.title }}{% endif %}-->
+<!--        </h1>-->
+<!--        <p class="desc">{{ page.description }}</p>-->
+<!--      </header>-->
+<!--    <article>-->
+<!--    {% if page.profile %}-->
+<!--    <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">-->
+<!--      {% if page.profile.image %}-->
+<!--        <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">-->
+<!--      {% endif %}-->
+<!--      {% if page.profile.address %}-->
+<!--        <div class="address">-->
+<!--          {{ page.profile.address }}-->
+<!--        </div>-->
+<!--      {% endif %}-->
+<!--    </div>-->
+<!--    {% endif %}-->
 
-    {% if page.social %}
-    <div class="social">
-      {% include social.html %}
-      <div class="contact-note">{{ site.contact_note }}</div>
-    </div>
-    {% endif %}
-  </article>
 
-</div>
+
+<!--    {% if page.selected_papers %}-->
+<!--      {% include selected_papers.html %}-->
+<!--    {% endif %}-->
+
+<!--    {% if page.social %}-->
+<!--    <div class="social">-->
+<!--      {% include social.html %}-->
+<!--      <div class="contact-note">{{ site.contact_note }}</div>-->
+<!--    </div>-->
+<!--    {% endif %}-->
+<!--  </article>-->
+
+
+
+
+
+
+    <!-- End Content -->
+
+
+<!-- End wrapper -->

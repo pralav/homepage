@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+title: About & News
+date: 2021-01-01 15:59:00-0400
 inline: true
 ---
 
-A simple inline announcement.
+Paper on Lifelong Knowledge-Enriched Social Event Representation Learning to appear at <a href="https://2021.eacl.org/">EACL'21</a>!

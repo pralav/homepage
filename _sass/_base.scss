@@ -164,7 +164,10 @@ a, table.table a {
 .news table th {
   color: var(--global-text-color);
 }
-
+.news h6{
+font-size: 19px;
+color: var(--global-theme-color);
+}
 // Social (bottom)
 
 .social {
@@ -298,7 +301,7 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 0.8rem;
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;

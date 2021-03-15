@@ -1,0 +1,58 @@
+<div class="news">
+    <br/>
+<!--    <h6></h6>-->
+    {% if site.press  %}
+    {% assign press = site.press %}
+        {% for item in press %}
+
+    <div class="blog-card {{ item.i }}">
+        <div class="meta">
+            <div class="photo" style="background-image: url({{ item.img }})"></div>
+<!--            <ul class="details">-->
+<!--                <li class="author"><a href="#">John Doe</a></li>-->
+<!--                <li class="date">Aug. 24, 2015</li>-->
+<!--                <li class="tags">-->
+<!--                    <ul>-->
+<!--                        <li><a href="#">Learn</a></li>-->
+<!--                        <li><a href="#">Code</a></li>-->
+<!--                        <li><a href="#">HTML</a></li>-->
+<!--                        <li><a href="#">CSS</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--            </ul>-->
+        </div>
+        <div class="description">
+            <h2>{{ item.title }}</h2>
+<!--            <h2>Opening a door to the future</h2>-->
+            <p> {{ item.description }}</p>
+            <p class="read-more">
+                <a href="{{ item.link_ext }}" target="_blank">More..</a>
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+
+    <!--    <div class="table-responsive">-->
+<!--        <table class="table table-sm table-borderless">-->
+<!--            {% assign press = site.press | reverse %}-->
+<!--            {% for item in press %}-->
+<!--            <tr>-->
+<!--                <th scope="row" class="abbr"><abbr class="badge"><a href="#">-->
+<!--                    {{ item.pressid }}</a></abbr></th>-->
+<!--                <td>-->
+<!--                    {% if item.inline %}-->
+<!--                    {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}-->
+<!--                    {% else %}-->
+<!--                    <a class="news-title"-->
+<!--                       href="{{ item.url | relative_url }}">-->
+<!--                        {{ item.title }}</a>-->
+<!--                    {% endif %}-->
+<!--                </td>-->
+<!--            </tr>-->
+<!--            {% endfor %}-->
+<!--        </table>-->
+<!--    </div>-->
+<!--    {% else %}-->
+<!--    <p>No news so far...</p>-->
+<!--    {% endif %}-->
+</div>

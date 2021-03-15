@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+
+
+
+
+
+
+
+<section class="tab-content">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="row">
+
+                    <div class="col-md-12 flexy_content">
+
+
+                        <!-- resp-tabs-container -->
+                        <div class="resp-tabs-container">
+
+                            <!-- profile -->
+                            <div id="{{ page.id }}" class="content_3">
+                                <!-- .title -->
+                                <h1 class="h-bloc">{{ page.title }}</h1>
+                                <h3 class="h-bloc">{{ page.description }}</h3>
+
+                                <div class="row top-p">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="post_content">
+                                                {% if page.press %}
+                                                {% include media.html %}
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

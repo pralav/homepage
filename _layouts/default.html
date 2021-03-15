@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    {% include head.html %}
+    {% include_cached head.html %}
     {% include scripts/mathjax.html %}
   </head>
 
@@ -10,7 +10,8 @@
 
     <!-- Header -->
 
-    {% include header.html %}
+
+    {% include_cached header.html %}
 
     <!-- Content -->
 
@@ -18,14 +19,11 @@
       {{ content }}
     </div>
 
-    <!-- Footer -->
-
-    {% include footer.html %}
 
   </body>
 
-  {% include scripts/bootstrap.html %}
-  {% include scripts/mansory.html %}
-  {% include scripts/misc.html %}
+  {% include_cached scripts/bootstrap.html %}
+  {% include_cached scripts/mansory.html %}
+  {% include_cached scripts/misc.html %}
 
 </html>

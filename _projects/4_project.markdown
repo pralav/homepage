@@ -1,9 +1,12 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
+title: Hate Speech Detection
+description: Multi-Modal Socio-Cultural Features 
+link_ext: https://arxiv.org/abs/2103.01616
+img: /assets/images/hate_sp.gif
+search_img: /homepage/assets/images/hate_sp.gif
+category: aisafety hatespeech multimodal behavior classify
+importance: 6
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,9 +1,12 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: /assets/img/3.jpg
-importance: 2
+title: Personas from IMDb Dialogues
+description: Using Attentive Memory Networks
+img: /assets/images/diag_persona.gif
+search_img: /homepage/assets/images/diag_persona.gif
+category: personas embeddings behavior classify
+link_iframe: https://www.aclweb.org/anthology/D18-1284?width=800&amp;height=500&amp;iframe=true
+importance: 3
 ---
 
 Every project has a beautiful feature showcase page.

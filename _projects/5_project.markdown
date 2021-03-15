@@ -1,9 +1,11 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: /assets/img/1.jpg
-importance: 3
+title: Social Event Embedding
+description: Lifelong Representation Learning  
+img: /assets/images/lifelongevent.gif
+search_img: /homepage/assets/images/lifelongevent.gif
+category: commonsense lifelong embeddings behavior
+importance: 2
 ---
 
 Every project has a beautiful feature showcase page.

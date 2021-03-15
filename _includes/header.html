@@ -23,10 +23,10 @@
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
           <!-- About -->
-          <li class="nav-item {% if page.title == 'about' %}active{% endif %}">
+          <li class="nav-item nav_About {% if page.title == 'About' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
-              about
-              {% if page.title == "about" %}
+              About
+              {% if page.title == "About" %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
@@ -46,7 +46,7 @@
           {% assign sorted_pages = site.pages | sort: "title" %}
           {% for p in sorted_pages %}
           {% if p.nav and p.autogen == nil %}
-          <li class="nav-item {% if page.title == p.title %}active{% endif %}">
+          <li class="nav-item nav_{{ p.title }} {% if page.title == p.title %}active{% endif %}">
               <a class="nav-link" href="{{ p.url | relative_url }}">
                 {{ p.title }}
                 {% if page.title == p.title %}
@@ -56,17 +56,30 @@
           </li>
           {% endif %}
           {% endfor %}
-          {% if site.enable_darkmode %}
-            <div class = "toggle-container">
-              <a id = "light-toggle">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-              </a>
-            </div>
-          {% endif %}
+
         </ul>
       </div>
     </div>
   </nav>
 
 </header>
+<!--<ul class="cb-slideshow" id="cb_slideshow" style="display:block">-->
+<!--  <li><span>Image 01</span>-->
+<!--    <div></div>-->
+<!--  </li>-->
+<!--  <li><span>Image 02</span>-->
+<!--    <div></div>-->
+<!--  </li>-->
+<!--  <li><span>Image 03</span>-->
+<!--    <div></div>-->
+<!--  </li>-->
+<!--  <li><span>Image 04</span>-->
+<!--    <div></div>-->
+<!--  </li>-->
+<!--  <li><span>Image 05</span>-->
+<!--    <div></div>-->
+<!--  </li>-->
+<!--  <li><span>Image 06</span>-->
+<!--    <div></div>-->
+<!--  </li>-->
+<!--</ul>-->

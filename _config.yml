@@ -2,23 +2,18 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Prashanth V # the website title (if blank, full name will be used instead)
 first_name: Prashanth
 middle_name: 
 last_name: V
 email: pralav@media.mit.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+  Prashanth's Profile Page
 
 url:  # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
+baseurl: /homepage # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
@@ -27,7 +22,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 1000px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -42,10 +37,10 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: pralav# your GitHub user name
 twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
+linkedin_username: prashanth-vijayaraghavan-34271147
+scholar_userid: wvqjqjIAAAAJ
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -56,8 +51,7 @@ work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note:
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
@@ -66,16 +60,16 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
-permalink: /blog/:year/:title/
-
-# Pagination
-pagination:
-  enabled: true
-
-# Comments
-disqus_shortname: al-folio # put your disqus shortname
+#blog_name: pralav  # your blog must have a name for it to show up in the nav bar
+#blog_description: a simple whitespace theme for academics
+#permalink: /blog/:year/:title/
+#
+## Pagination
+#pagination:
+#  enabled: true
+#
+## Comments
+#disqus_shortname: pralav # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -90,6 +84,11 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  press:
+    defaults:
+      layout: post
+    output: true
+    permalink: /press/:path/
 
 news_limit: 5
 
@@ -131,6 +130,8 @@ plugins:
   - jekyll/scholar
   - jekyll-twitter-plugin
   - jemoji
+  - jekyll-include-cache
+  - jekyll-pdf-embed
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -138,8 +139,8 @@ plugins:
 
 scholar:
 
-  last_name: Einstein
-  first_name: [Albert, A.]
+  last_name: Vijayaraghavan
+  first_name: [Prashanth, Prashanth*]
 
   style: apa
   locale: en
@@ -166,7 +167,7 @@ enable_panelbear_analytics: false
 enable_mansory:             true
 enable_math:                true
 enable_tooltips:            false
-enable_darkmode:            true
+enable_darkmode:            false
 show_social_icons:          false
 
 # -----------------------------------------------------------------------------
@@ -187,6 +188,8 @@ fontawesome:
 jquery:
   version: "3.5.1"
   integrity: "sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+mixitup:
+  version: "3.3.1"
 mathjax:
   version: "3.1.2"
 mansory:
@@ -200,3 +203,4 @@ mdb:
 popper:
   version: "2.4.4"
   integrity: "sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A=="
+
