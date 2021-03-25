@@ -3,7 +3,7 @@ layout: page
 title: FlipFeed
 description: Chrome Extension To Escape Political Bubble 
 img: /assets/images/ff.gif
-link_iframe: https://www.nytimes.com/2017/03/03/arts/the-battle-over-your-political-bubble.html
+link_ext: https://www.nytimes.com/2017/03/03/arts/the-battle-over-your-political-bubble.html
 play_ext: https://youtu.be/DjvO_gcnQS0
 category: elections behavior
 importance: 11
