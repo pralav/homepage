@@ -3,7 +3,7 @@ layout: page
 title: Electome
 description: Characterise Election Discourse On Social Media 
 img: /assets/images/electome.gif
-link_iframe: http://www.electome.org/
+link_ext: http://www.electome.org/
 search_img: /homepage/assets/images/electome.gif
 category: elections classify
 importance: 10
